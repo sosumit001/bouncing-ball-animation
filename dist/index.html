@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bouncing Ball</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        canvas {
+            border-bottom: 2px solid rgb(0, 0, 0);
+            background-color: #ffffff;
+            border-left: 1px solid rgb(190, 184, 184);
+            border-right: 1px solid rgb(190, 184, 184);
+          
+        }
+        #leftRightBtns{
+            display: flex;
+            width: 300px;
+            height: 40px;
+            margin-top: 5vh;
+           
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        button {
+            background-color: rgb(0, 0, 0);
+            color:rgb(255, 255, 255);
+            height: 30px;
+            width: 40%;
+            border: none;
+            outline: none;
+        }
+      p{
+        margin-top: 10px;
+      }
+
+
+    </style>
+<script defer src="bundle.js"></script></head>
+<body>
+    <h3 id="app">Bouncing Ball Game</h3>
+    <canvas width="" height="500px" id="canvas"></canvas>
+    <div id="leftRightBtns">
+        <button>left</button>
+        <button>right</button>
+    </div>
+    <p>use <b>ArrowLeft, ArrowRight</b> on keyboard</p>
+    <script src="../dist/bundle.js"></script>
+</body>
+</html>
